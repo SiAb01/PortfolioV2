@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+
+body{
+
+margin: 0;
+padding:0 ;
+background-color: grey ; 
+background-image: url("image/background.png" );
+color:whitesmoke;
+
+font-family: 'Oxygen', sans-serif;
+
+}
+
+
+
+
+nav{
+
+    width: inherit;
+    top: O;
+    display: flex ;
+    flex: wrap;
+    justify-content: space-between;
+    align-items: center ;
+    position:sticky; 
+    background: rgba(0,0 ,0, 0.3);
+    
+    
+    
+    
+   
+
+   
+    
+}
+
+nav .profile
+{   
+    display: flex ;
+    align-items: center ;
+
+}
+nav .profile h1{
+    font-weight: bold;
+}
+nav .profile img
+{
+    width: 60px;
+    height: 40px;
+}
+
+
+nav ul
+
+{ 
+  display: flex;
+  flex-wrap:wrap;
+  
+  list-style:none;
+
+}
+
+nav ul li 
+{   font-weight: bold;
+    margin-right: 40px;
+    cursor: pointer;
+    
+    
+}
+nav ul li a {
+    
+    text-decoration: none;
+    color: whitesmoke;
+    
+
+}
+nav ul li a:visited {
+    text-decoration: none;
+}
+
+nav ul li a:active{
+    text-decoration: none;
+    color: grey;
+
+}
+
+nav ul li a:hover {
+
+    text-decoration: none; 
+    
+    
+}
+
+
+nav ul li:hover {
+
+   border-bottom: 1px solid pink;
+   
+  
+   text-decoration: none;
+
+}
+
+
+
+
+
+
+
