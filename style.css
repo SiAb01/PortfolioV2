@@ -5,30 +5,31 @@ body{
 margin: 0;
 padding:0 ;
 background-color: grey ; 
-background-image: url("image/background.png" );
+background-image: url("image/Background.jpg" );
 color:whitesmoke;
 
 font-family: 'Oxygen', sans-serif;
 
 }
 
+a {
+    text-decoration: none;
+}
 
-
+/*------------ DeBUT NAVBAR -------------- */
 
 nav{
 
-    width: inherit;
-    top: O;
+    
+    position:sticky; 
+    position: -webkit-sticky;
+    top:0;
     display: flex ;
-    flex: wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center ;
-    position:sticky; 
-    background: rgba(0,0 ,0, 0.3);
-    
-    
-    
-    
+   
+    background: rgba(255,2555 ,255, 0.1); 
    
 
    
@@ -43,6 +44,7 @@ nav .profile
 }
 nav .profile h1{
     font-weight: bold;
+    text-align: center;
 }
 nav .profile img
 {
@@ -58,6 +60,7 @@ nav ul
   flex-wrap:wrap;
   
   list-style:none;
+  
 
 }
 
@@ -65,6 +68,9 @@ nav ul li
 {   font-weight: bold;
     margin-right: 40px;
     cursor: pointer;
+    padding: 0;
+    padding-bottom: 5 px ;
+    border-bottom:  1px pink;
     
     
 }
@@ -96,6 +102,7 @@ nav ul li a:hover {
 nav ul li:hover {
 
    border-bottom: 1px solid pink;
+  
    
   
    text-decoration: none;
@@ -103,8 +110,117 @@ nav ul li:hover {
 }
 
 
+/*------------ END NAVBAR -------------- */
 
 
 
+.titre {
+    letter-spacing: 3px;
+    text-align: center;
+}
+.titre h1 {
+    font-size: 50px;
+}
+.introduction p
+{
+    letter-spacing: 1px;
+    text-align:justify;
+}
 
+
+
+.main_content {
+    max-width: 40%;
+    margin-top: 20%;
+    margin-left: 25%;
+}
+
+.project_content img{
+    width: 200px;
+    height: 200px;
+    
+}
+
+.project_content {
+    
+   
+    max-width: 40%;
+    max-height: 16%;
+    margin-top: 10%;
+    margin-left: 25%;
+}
+
+.project_content p {
+text-align: center;
+}
+
+.projets {
+    align-items: center;
+    display : flex ;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+
+}
+
+.projets button {
+   justify-content: center;
+   max-width: 100%;
+   margin-left: 50%;
+   padding: 0;
+   
+}
+
+/*------------ DEBUT FOOTER -------------- */
+
+footer {
+    max-width: 100%;
+    max-height:20%;
+    background-color: black ; 
+    
+    
+    /*justify-content: space-between;*/
+}
+    
+
+
+.pfooter {
+    display: flex;
+    justify-content: center;
+    margin-left:20px  ;
+    /*margin-left: 10px;*/
+    color:rgba(211,211 ,211, 0.5);
+
+    
+}
+.icons_footer{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.icons_footer a {
+    margin-left: 10px;
+}
+
+/*------------ END NAVBAR -------------- */
+
+
+
+/* Page projet */
+.projets_content
+{
+    margin-left: 20%;
+    max-width:800px ;
+
+}
+
+.Projets_ensemble{
+    margin-left: 20%;
+    max-width:800px;
+    background-color: rgba(211,211 ,211, 0.1);
+
+}
 
