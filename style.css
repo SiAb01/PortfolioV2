@@ -303,9 +303,9 @@ footer {
 
 .projet:hover{
 
-    
+    border-style: dashed; 
     border-color: rgba(255,2555 ,255, 0.1);
-
+    
 }
 
  /* -- Grid items --*/
@@ -335,4 +335,66 @@ footer {
     grid-column: 3;
 }
 
+/* ----------------------   PROFILE SECTION   -------------------------*/
 
+/*Grid container*/
+
+.profil_content {     
+    background-color: rgba(255,2555 ,255, 0.02);
+    margin-top: 25% ;
+    margin-left: 20% ;
+    margin-right: 20%;
+    
+    display:grid;
+    grid-template-columns: 2fr 1fr 3fr;
+    grid-template-rows: 1fr 2fr 1fr 3fr;
+    grid-template-areas: 
+    "a a a"
+    "b c c"
+    "d d d"
+    "e e f";
+
+
+}
+.profil_content > * {
+    margin: 10px;
+}
+/*Grid items*/
+.profil_h1_apropos:nth-child(1){
+grid-area: a ;
+}
+
+/*.profil_picture:nth-child(2){
+grid-area: ;
+
+}
+.profil_picture img{
+    max-width: 600px;
+} */
+#icon_profil:nth-child(2)     {
+    grid-area: b;
+    max-width: 300px;
+   
+   border-radius: 50%;
+}
+.profil_p_intro:nth-child(3){
+    grid-area:c ;
+    border-radius: 10%;
+    background-color: darkred;
+    
+
+}
+.profil_h3_skills:nth-child(4){
+    grid-area: d;
+    
+}
+
+.profil_techskills:nth-child(5){
+    grid-area: e;
+
+}
+
+.profil_softkils:nth-child(6){
+    grid-area:f ;
+
+}
